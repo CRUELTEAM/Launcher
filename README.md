@@ -23,8 +23,9 @@ Allow the following through the firewall ("security group")
 Common
 ------
 برای این کار نیاز به یک یوزر سودو ارید سپس مراحل زیر را انجام دهید
-    wget https://github.com/aliebadi65/vpn-ubunut/master/setup.sh
-    sudo sh setup.sh
+   
+$    wget https://github.com/aliebadi65/vpn-ubunut/master/setup.sh
+$    sudo sh setup.sh
 
 Let the script run. Take note if the server external ip address
 detection is succesful.  
