@@ -18,5 +18,8 @@ sudo sh setup.sh
 ------------------
 https://telegram.me/joinchat/DWyKcj6qYuFVLoGGQwIikQ
 
+سایت ما :
+---------------
+http://cruelplus.ir
 
 M.KH
