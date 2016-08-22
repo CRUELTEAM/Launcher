@@ -6,7 +6,7 @@ JSON = require('dkjson')
 HTTPS = require('ssl.https')
 dofile('utilities.lua')
 ----config----
-local bot_api_key = "" --BOT TOKEN تو کن ربات خود را در اینجا قرار دهید
+local bot_api_key = "266744247:AAEWzWC7P03ll1KGridXMQmLOZYKtCRs4VI" --BOT TOKEN تو کن ربات خود را در اینجا قرار دهید
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 function sendRequest(url)
   local dat, res = HTTPS.request(url)
@@ -57,9 +57,6 @@ function bot_run()
 	end
 	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nID = "..bot.id.." \nLauncher bot \n\nCreate by CRUEL TEAM\nsudo : @IT_MKH"
 	print(bot_info)
-	for k,v in pairs(add.id) do
-  print(k.." :"..v)
-  end
 	last_update = last_update or 0
  currect_folder = ""
  is_running = true
@@ -73,13 +70,12 @@ function bot_run()
 end
 function msg_processor(msg)
 if msg.text == '/start' then
-sendMessage(msg.chat.id,'Hi :D',true)
-end
-if msg.text == 'run' then
-local oo = io.popen('cd .. ; cd TeleSeed ; killall screen ; killall tmux ; killall telegram-cli ; tmux new-session -s script "bash steady.sh -t" ')
-return oo
 sendMessage(msg.chat.id,'bot running ...',true)
-end
+local oo = io.popen('cd .. ; cd TeleSeed ; killall screen ; killall tmux ; killall telegram-cli ; tmux new-session -s script "bash steady.sh -t" ')
+		end
+	end
+
+
 bot_run() 
 while is_running do 
 	local response = getUpdates(last_update+1) 
