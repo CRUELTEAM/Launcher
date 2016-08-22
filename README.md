@@ -12,17 +12,10 @@ launcher.lua
 
 ````````````
 git clone https://github.com/CRUELTEAM/Launcher.git
-nohup ./launch.sh
+nohup sudo bash ./launch.sh
 
 ```````````````````
-
-سپس وارد تلگرام شوید و در ربات دستور
-`````````
-run
-````````````
-
-رو بفرستید
-
+حال فقط کافیست این ربات ای پی ای را استارت کنید تا ربات ضد اسپم شما ران شود
 
 CRUEL TEAM
 [@IT_MKH](https://telegram.me/it_mkh)
